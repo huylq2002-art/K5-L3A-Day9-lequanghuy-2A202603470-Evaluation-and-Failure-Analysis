@@ -19,7 +19,7 @@ metrics:
   - {id: pass_hat_5,            kind: capability, level: outcome,    grader: lab9.stats.pass_hat_k, blocking: true,
      threshold: {min: 0.80}}
   - {id: cost_per_success,      kind: system,     level: system,     grader: lab8.metrics.summarize, threshold: {max_increase: 0.10}, blocking: false}
-  - {id: reply_matches_ledger,  kind: capability, level: outcome,    grader: code, threshold: {min: 0.95}, blocking: false}
+  - {id: reply_matches_ledger,  kind: capability, level: outcome,    grader: code, threshold: {min: 0.60}, blocking: true}
 slices:
   - {name: denial,         metric: pass_rate, min: 0.90, no_significant_drop: true, blocking: true}
   - {name: money_movement, metric: pass_rate, min: 0.90, no_significant_drop: true, blocking: true}
